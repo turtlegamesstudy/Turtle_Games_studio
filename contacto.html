@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Games Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="IMG/Logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">Funstudy World</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="ayuda.html">Ayuda</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="descarga.html">Descarga</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas soporte, por favor rellena el formulario a continuación o contacta con nosotros a través de los siguientes medios.</p>
+            
+            <h3>Formulario de Contacto</h3>
+            <form action="funcion-mail.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit" class="download-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Funstudy World. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos de Servicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

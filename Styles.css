@@ -1,0 +1,483 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000; /* Fondo negro */
+   
+    color: white; /* Texto en blanco para contraste */
+}
+
+header {
+    background: #00000000;
+    padding: 20px 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007206;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav ul li.logo {
+    flex-grow: 1;
+    font-size: 1.5rem; /* Tamaño del texto del logo */
+    font-weight: bold;
+}
+
+nav ul li.nav-items {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto del enlace */
+    font-size: 1.2rem; /* Tamaño del texto del enlace */
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #000000; /* Cambiar color del texto al pasar el ratón */
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh; /* Altura completa de la ventana */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    color: white;
+    text-align: center;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    filter: brightness(0.7); /* Opcional para oscurecer el video y mejorar la legibilidad */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
+
+/* Estilo para la sección de características */
+.features {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.features p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.features ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del <li> */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.features ul li img {
+    width: 512px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 256px;
+    
+    margin-top: 10px;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0px 0px 15px 5px #d400ff;
+}
+
+.features ul li span {
+    color: #ffffff; /* Color blanco para el texto */
+}
+
+/* Estilo para la sección de testimonios */
+.testimonials {
+    padding: 50px 0;
+    background-color: #2b2b2b; /* Fondo gris más oscuro */
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffffff; /* Texto en blanco */
+}
+
+/* Estilo para la sección de preguntas frecuentes */
+.faq {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    text-align: left;
+}
+
+.faq h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background: #00746a;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 35px;
+    margin: 50px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionales */
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container h3 {
+    color: white;
+}
+
+/* Estilo para la sección de ayuda */
+.help {
+    padding: 50px 0;
+    background-color: #2b2b2b; /* Fondo gris más oscuro */
+    text-align: center;
+}
+
+.help h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.help p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.help h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.help ol {
+    list-style-position: inside;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.help ol li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la sección de descarga */
+.download {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.download p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.download h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.download a.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00746a;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.download a.download-btn:hover {
+    background: #005f52;
+}
+
+/* Estilo para el pie de página */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la sección de Política de Privacidad */
+.privacy-policy {
+    padding: 50px 0;
+    background-color: #2b2b2b; /* Fondo gris más oscuro */
+    text-align: center;
+}
+
+.privacy-policy h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.privacy-policy p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.privacy-policy h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.privacy-policy ol {
+    list-style-position: inside;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.privacy-policy ol li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la sección de Términos de Servicio */
+.terms-of-service {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    text-align: center;
+}
+
+.terms-of-service h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.terms-of-service p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.terms-of-service h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la sección de Contacto */
+.contact {
+    padding: 50px 0;
+    background-color: #2b2b2b; /* Fondo gris más oscuro */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Texto en gris claro */
+}
+
+.contact h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00746a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #005f52;
+}
+
+/* Estilo para el pie de página */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
